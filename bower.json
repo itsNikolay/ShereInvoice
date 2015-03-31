@@ -1,0 +1,24 @@
+{
+  "name": "invoice",
+  "version": "0.0.0",
+  "authors": [
+    "Ponomarev Nikolay <itsnikolay@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "jquery/jquery",
+    "backbone": "jashkenas/backbone",
+    "underscore": "jashkenas/underscore",
+    "handlebars": "components/handlebars.js"
+  }
+}
