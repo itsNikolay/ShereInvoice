@@ -15,10 +15,10 @@ func main() {
 func WelcomeHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl, err := template.ParseFiles("templates/application.html")
 	if err != nil {
-		fmt.Printf("%s\n", err)
+		fmt.Printf(err)
 	}
 	err = tmpl.Execute(w, tmpl)
 	if err != nil {
-		fmt.Printf("%s\n", err)
+		fmt.Printf(err)
 	}
 }
