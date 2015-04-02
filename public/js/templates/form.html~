@@ -1,0 +1,6 @@
+<script type="text/template" id="formTemplate">
+  <form>
+    <input name="amount"></input>
+    <input type="submit"></input>
+  </form>
+</script>

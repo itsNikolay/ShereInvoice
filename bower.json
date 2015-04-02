@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "requirejs": null,
+    "requirejs-text": "latest",
     "jquery": "jquery/jquery",
     "backbone": "jashkenas/backbone",
     "underscore": "jashkenas/underscore#1.7.0",
