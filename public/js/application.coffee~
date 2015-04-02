@@ -1,0 +1,29 @@
+class Invoice extends Backbone.Model
+  url: '/invoice'
+
+class InvoiceFormView extends Backbone.View
+  el: '#container'
+  template: _.template($('#form').html())
+  model: new Invoice
+  events: 'submit form': 'submit'
+  render: -> @$el.html @template()
+
+  submit: (e) ->
+    e.preventDefault()
+    array = $('form').serializeArray()
+    data = {}
+    for invoice in array
+      data[invoice['name']] = invoice['value']
+
+    console.log @model.save(data)
+
+class WorkspaceRouter extends Backbone.Router
+  routes: '': 'welcome'
+  welcome: ->
+    (new InvoiceFormView).render()
+    return
+
+
+$ ->
+  new WorkspaceRouter
+  Backbone.history.start pushState: true

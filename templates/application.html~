@@ -1,19 +1,24 @@
 <html>
   <head>
     <!--Sources-->
-    <script src="/public/components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="/public/components/underscore/underscore.js" type="text/javascript"></script>
-    <script src="/public/components/backbone/backbone.js" type="text/javascript"></script>
+    <!--<script src="/public/components/jquery/dist/jquery.min.js" type="text/javascript"></script>-->
+    <!--<script src="/public/components/underscore/underscore.js" type="text/javascript"></script>-->
+    <!--<script src="/public/components/backbone/backbone.js" type="text/javascript"></script>-->
+    <script data-main="/public/js/main" src="public/components/requirejs/require.js"></script>
 
-    <!--Codes-->
-    <script src="/public/js/application.js" type="text/javascript"></script>
   </head>
   <body>
-    <script type="text/template" id="test">
-      <h2><%= title %></h2>
+    <script type="text/template" id="form">
+      <form>
+        <input name="amount"></input>
+        <input type="submit"></input>
+      </form>
     </script>
 
     <h1>Header</h1>
     <div id="container"></div>
+
+    <!--Codes-->
+    <script src="/public/js/application.js" type="text/javascript"></script>
   </body>
 </html>
