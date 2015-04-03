@@ -21,6 +21,7 @@
     "jquery": "jquery/jquery",
     "backbone": "jashkenas/backbone",
     "underscore": "jashkenas/underscore#1.7.0",
-    "mustache": "janl/mustache.js"
+    "mustache": "janl/mustache.js",
+    "bootstrap-css": "latest"
   }
 }

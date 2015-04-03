@@ -12,8 +12,6 @@ define [
     events: 'submit form': 'submit'
     render: -> @$el.html @template()
 
-    initialize: -> console.log formTemplate
-
     submit: (e) ->
       e.preventDefault()
       array = $('form').serializeArray()
